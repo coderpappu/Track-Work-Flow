@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <!-- todo container  -->
+    <div class="container">
+      <div class="title">
+        <h2>Todo List</h2>
+      </div>
+
+      <div class="todos">
+        <table class="todoTable" border="1px" style="border-collapse: collapse">
+          <thead>
+            <tr>
+              <th>S.N</th>
+              <th>Title</th>
+
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody id="tblData"></tbody>
+        </table>
+
+        <div class="add">
+          <div class="inputbox">
+            <input id="todoTitle" type="text" placeholder="Title" />
+          </div>
+
+          <div class="inputbox">
+            <button id="addTodo" class="btn btn-success">ADD</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
